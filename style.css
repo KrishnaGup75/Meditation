@@ -171,18 +171,39 @@ body {
 @media (max-width: 768px) {
 
     body {
-        background-position: center;
+        background: url('green_leaves_bg.jpg') no-repeat center top;
         background-size: cover;
+        overflow-x: hidden;
     }
 
+    /* HEADER */
+    .header {
+        padding: 14px 10px;
+    }
+
+    .header h1 {
+        font-size: 1.4rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    /* CENTERED WEBSITE CARD */
     .meditation-app {
         flex-direction: column;
-        padding: 20px;
-        margin: 20px 10px;
-        max-width: 100%;
+        background: rgba(187, 225, 202, 0.97); /* thoda transparent */
+        margin: 20px auto;
+        padding: 18px;
+        width: 92%;
+        max-width: 420px;
     }
 
     /* VISUALIZER */
+    .visualizer {
+        margin-bottom: 12px;
+    }
+
     .circle {
         width: 120px;
         height: 120px;
@@ -191,6 +212,7 @@ body {
 
     #meditation-status {
         font-size: 1.1rem;
+        margin: 8px 0;
     }
 
     /* CONTROLS */
@@ -201,25 +223,34 @@ body {
     .timer-display {
         font-size: 2.8rem;
         text-align: center;
+        margin-bottom: 15px;
     }
 
-    /* BUTTONS STACK */
+    /* BUTTONS */
     .button-group {
         flex-direction: column;
         width: 100%;
+        gap: 10px;
+        margin-bottom: 20px;
     }
 
     .control-btn {
         width: 100%;
-        font-size: 1rem;
         padding: 12px;
+        font-size: 1rem;
+        border-radius: 25px;
     }
 
-    /* SETTINGS STACK */
+    /* SETTINGS */
+    .settings {
+        padding-top: 12px;
+        gap: 8px;
+    }
+
     .settings div {
         flex-direction: column;
         align-items: flex-start;
-        gap: 5px;
+        gap: 4px;
     }
 
     .settings input,
@@ -228,18 +259,15 @@ body {
     }
 }
 
+/* SMALL PHONES */
 @media (max-width: 480px) {
 
-    .header h1 {
-        font-size: 1.4rem;
+    .circle {
+        width: 105px;
+        height: 105px;
     }
 
     .timer-display {
         font-size: 2.4rem;
-    }
-
-    .circle {
-        width: 100px;
-        height: 100px;
     }
 }
